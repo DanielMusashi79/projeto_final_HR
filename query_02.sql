@@ -1,0 +1,26 @@
+SELECT
+    e.EMPLOYEE_ID AS funcionario_id,
+    CONCAT(e.FIRST_NAME, ' ', e.LAST_NAME) AS nome_completo,
+    e.HIRE_DATE AS data_contratacao,
+    e.SALARY AS salario,
+    d.DEPARTMENT_NAME AS departamento,
+    l.CITY AS cidade,
+    l.STATE_PROVINCE AS estado_provincia,
+    c.COUNTRY_NAME AS pais,
+    r.REGION_NAME AS regiao
+FROM
+    HR.EMPLOYEES e
+LEFT JOIN
+    HR.DEPARTMENTS d ON e.DEPARTMENT_ID = d.DEPARTMENT_ID
+LEFT JOIN
+    HR.LOCATIONS l ON d.LOCATION_ID = l.LOCATION_ID
+LEFT JOIN
+    HR.COUNTRIES c ON l.COUNTRY_ID = c.COUNTRY_ID
+LEFT JOIN
+    HR.REGIONS r ON c.REGION_ID = r.REGION_ID
+WHERE
+    r.REGION_NAME IS NOT NULL
+ORDER BY
+    r.REGION_NAME ASC,
+    c.COUNTRY_NAME ASC,
+    l.CITY ASC;
