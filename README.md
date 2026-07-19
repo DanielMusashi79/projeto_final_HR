@@ -190,7 +190,7 @@ Colaboradores em setores de base, como Shipping, que figuram como outliers super
    cd turma-visualizacao-de-dados
 
 2. **Certifique-se de possuir as dependências instaladas:**
-pip install pandas matplotlib seaborn
+`pip install pandas matplotlib seaborn`
 
 3. **Coloque os arquivos extraídos do banco de dados na raiz da pasta:**
 • `query_01.csv`
