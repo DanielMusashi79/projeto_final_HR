@@ -126,16 +126,18 @@ ORDER BY
     l.CITY ASC;
 ```
 
-### 📈 Análise Exploratória de Dados (Estatística Descritiva)
-Abaixo estão consolidadas as métricas descritivas obtidas a partir da execução do script projeto_final.py sobre as bases extraídas.  
+## 📈 Análise Exploratória de Dados (Estatística Descritiva)
 
-## 📊 Estatísticas Gerais de Salários
-• Total de Funcionários Analisados: 106 colaboradores
-• Média Salarial: R$ 6.456,75
-• Mediana Salarial: R$ 6.150,00
-• Salário Mínimo: R$ 2.100,00
-• Salário Máximo: R$ 24.000,00
-• Desvio Padrão: R$ 3.927,80
+Abaixo estão consolidadas as métricas descritivas obtidas a partir da execução do script projeto_final.py sobre as bases extraídas.
+
+### 📊 Estatísticas Gerais de Salários
+
+* **Total de Funcionários Analisados:** 106 colaboradores
+* **Média Salarial:** R$ 6.456,75
+* **Mediana Salarial:** R$ 6.150,00
+* **Salário Mínimo:** R$ 2.100,00
+* **Salário Máximo:** R$ 24.000,00
+* **Desvio Padrão:** R$ 3.927,80
 
 ## 🏢 Visão Setorial: Salários por Departamento
 | Departamento | Contagem (Qtd) | Média (R$) | Mediana (R$) | Mínimo (R$) | Máximo (R$) |
